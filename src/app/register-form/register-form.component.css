@@ -1,0 +1,14 @@
+.form-area, 
+.preview-area
+{
+    margin:10px;
+    margin-top: 50px;
+}
+
+.text-red {
+    color:red;
+}
+
+.form-control.ng-touched.ng-invalid{
+    border:1px solid red;
+}

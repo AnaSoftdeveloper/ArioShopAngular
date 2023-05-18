@@ -1,0 +1,17 @@
+<div>
+    <div *ngFor="let item of lstProduct; index as i" >
+      <h2>{{i}} {{item}}</h2> 
+    </div>
+    <div *ngIf="mycondition; else elseBlock">
+      Content to render when condition is true.
+    </div>
+    <ng-template #elseBlock>
+      Content to render when condition is false.
+      <h1 style="color:orange;">false</h1>
+      {{greetuser()}} {{greeting}}
+      Welcome  {{parentData}}
+    </ng-template>
+
+    <button  (click)="onClick($event)">Greet button</button>
+    <button  (click)="greeting ='without handler '">Greet button</button>
+</div>
